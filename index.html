@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>NOVAN</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: black;
-      color: white;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<title>NOVAN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
 
-    h1 {
-      font-size: 60px;
-      margin: 0;
-    }
+/* HERO (pantalla principal) */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+              url('fondo.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-    .btn {
-      margin-top: 20px;
-      padding: 15px 25px;
-      background: cyan;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 10px;
-    }
+/* TITULO */
+.hero h1 {
+  font-size: 70px;
+  letter-spacing: 8px;
+  margin: 0;
+}
 
-    .section {
-      padding: 60px 20px;
-    }
-  </style>
+/* FRASE */
+.hero p {
+  margin-top: 10px;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+/* BOTON */
+.btn {
+  margin-top: 25px;
+  padding: 15px 30px;
+  background: #00eaff;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.btn:hover {
+  background: white;
+}
+
+/* SECCION EXTRA */
+.section {
+  padding: 80px 20px;
+  background: black;
+}
+</style>
+
 </head>
 
 <body>
 
-  <div class="hero">
-    <h1>NOVAN</h1>
-    <p>No encajo en este mundo…</p>
+<div class="hero">
+  <h1>NOVAN</h1>
+  <p>No encajo en este mundo...</p>
+  <a href="#" class="btn">Entrar al mundo de NOVAN</a>
+</div>
 
-    <a class="btn" href="#store">
-      Entrar al mundo de NOVAN
-    </a>
-  </div>
-
-  <div class="section">
-    <h2>“Expreso amor… pero duele.”</h2>
-  </div>
-
-  <div id="store" class="section">
-    <h2>Tienda NOVAN</h2>
-    <p>Poleras · Peluches · Chapitas</p>
-
-    <a class="btn" href="#">
-      Ir a la tienda
-    </a>
-  </div>
+<div class="section">
+  <h2>Bienvenido</h2>
+  <p>Este es el inicio del universo NOVAN.</p>
+</div>
 
 </body>
 </html>
